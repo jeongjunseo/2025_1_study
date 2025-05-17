@@ -6,6 +6,7 @@ int count_code2 = 0;
 
 int fib(int n) {
     if (n == 1 || n == 2) {
+        count_code1++;
         return 1;
     }
     return fib(n - 1) + fib(n - 2);
