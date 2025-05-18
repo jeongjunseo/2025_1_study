@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="11053.c">
+    <ClCompile Include="boj11053.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="boj24416.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="boj2579.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

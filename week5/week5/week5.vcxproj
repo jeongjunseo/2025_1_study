@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="11053.c" />
+    <ClCompile Include="boj11053.c" />
+    <ClCompile Include="boj24416.c" />
+    <ClCompile Include="boj2579.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
