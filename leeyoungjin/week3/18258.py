@@ -7,20 +7,20 @@ queue = deque()
 
 for _ in range(n): # 명령 수 만큼
     command = input().strip() # command 받고
-     
+        
     if command.startswith("push"):
-        _, num = command.split()
-        queue.append(int(num)) # push
+            _, num = command.split()
+            queue.append(int(num)) # push
     elif command == "pop":
-        if queue:
-            print(queue.popleft()) # pop
-        else:
-            print(-1)
+            if queue:
+                print(queue.popleft()) # pop
+            else:
+                print(-1)
     elif command == "size":
-        print(len(queue)) # 사이즈 출력
+            print(len(queue)) # 사이즈 출력
     elif command == "empty":
-        print(0 if queue else 1) 
+            print(0 if queue else 1) 
     elif command == "front":
-        print(queue[0] if queue else -1)
+            print(queue[0] if queue else -1)
     elif command == "back":
-        print(queue[-1] if queue else -1)
+            print(queue[-1] if queue else -1)
