@@ -1,0 +1,38 @@
+// Visual Studio에서 scanf 보안 경고 제거용 매크로
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable: 4996)
+
+#include <stdio.h>
+
+int main(void)
+{
+    // 입력 받을 정수 S (목표 합)
+    long long S;
+
+    // 현재까지 사용한 자연수의 개수 (마지막 자연수 N)
+    long long N = 0;
+
+    // 누적합을 저장할 변수
+    long long count = 0;
+
+    // 사용자로부터 S 입력 받기
+    scanf("%lld", &S);
+
+    // count가 S를 초과하지 않을 동안 반복
+    while (S > count)
+    {
+        N++;                // 다음 자연수 추가
+        count = count + N;  // 누적합에 더함
+
+        // 만약 누적합이 S를 초과하면
+        if (S < count)
+        {
+            N--;    // 마지막에 더한 N은 초과했으므로 제외
+            break;  // 반복문 종료
+        }
+    }
+
+    // 조건을 만족하는 최대 자연수 개수 N 출력
+    printf("%lld", N);
+    return 0;
+}
