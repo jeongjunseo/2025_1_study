@@ -8,7 +8,7 @@ int main() {
     long long sum = 0;  // 누적 합
     int i = 1;          // 현재 자연수
 
-    // S를 넘지 않을 때까지 더하기
+    //  S를 넘지 않을 때까지 더하기
     while (sum + i <= S) {
         sum += i;
         i++;
